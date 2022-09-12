@@ -16,6 +16,14 @@ public class EmployeeTest {
         String whitehouseAddress = street + city + state + zip;
         System.out.println(whitehouseAddress);
 
+        result  = (((((1+2)-1)*2)/2)+8)%7;
+        result -= 1;
+        result *= 2;
+        result /=2;
+        result +=8;
+        result %= 7;
+        System.out.println(result);
+
 
         char myChar = 'c';
 
