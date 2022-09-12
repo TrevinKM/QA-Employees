@@ -13,12 +13,28 @@ public class Employee {
         this.lastName = lastName;
     }
 
+    /* setters for creating an employee */
     public void setSalary(Integer salary) {
         this.salary = salary;
     }
 
     public void setHired(boolean isHired){
         this.isHired = isHired;
+    }
+
+    public void testCase(){
+        //largest byte
+        byte sizeof = 127;
+        byte lowByte = -128;
+        //largest short
+        short highShort = 88;
+        int highInt = sizeof * sizeof;
+        long highLong;
+        char alpha;
+        float point;
+        double point2;
+
+        boolean nope;
     }
 
 }
