@@ -22,6 +22,10 @@ public class Employee {
         this.isHired = isHired;
     }
 
+    public void getName(){
+        System.out.println("Hello "+ this.firstName + " " + this.lastName);
+    }
+
     public void testCase(){
         //largest byte
         byte sizeof = 127;
