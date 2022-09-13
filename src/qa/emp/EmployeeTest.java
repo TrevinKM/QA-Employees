@@ -8,6 +8,19 @@ public class EmployeeTest {
         Integer salary = newEmp.getSalary();
     }
     public static void main(String[] args) {
+
+        //call area class
+        System.out.println("Enter two numbers : ");
+        Scanner thisScan = new Scanner(System.in);
+        int scanVal = thisScan.nextInt();
+        int scanVal2 = thisScan.nextInt();
+
+        Area rectangle = new Area( scanVal, scanVal2);
+
+        System.out.println(" The area is : " + rectangle.returnArea() + "cm^2")
+        ;
+
+
         int myInt = 100;
 
         int x = 100, y = 5, z = -30;
