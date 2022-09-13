@@ -54,6 +54,10 @@ public class EmployeeTest {
 
         System.out.println("the taxed salaries are: " + newEmp2.getSalaryTax() + " and " + newEmp3.getSalaryTax());
 
+        newEmp2.raiseSalary(200);
+        newEmp3.raiseSalary(500);
+
+        System.out.println("Now the raised salaries are " + newEmp2.getSalary() +" " + newEmp3.getSalary());
 
 
 //        int num1 = 5;

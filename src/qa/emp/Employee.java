@@ -1,7 +1,7 @@
 package qa.emp;
 
 public class Employee {
-    private static double salaryTax = 0.2;
+    private static final double salaryTax = 0.2;
     private String userName;
     private String firstName;
     private String lastName;
@@ -41,6 +41,10 @@ public class Employee {
 
     public double getSalaryTax(){
         return this.salary * (1 - salaryTax);
+    }
+
+    public void raiseSalary(Integer raise){
+        this.salary += raise;
     }
 
 //    public void testCase(){
