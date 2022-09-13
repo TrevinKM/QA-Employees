@@ -9,6 +9,10 @@ public class EmployeeTest {
     }
     public static void main(String[] args) {
 
+        //Book class calls
+        Book book = new Book("50 shades ", "dunno", 22.0);
+        System.out.println(book.toString());
+
         //call area class
         System.out.println("Enter two numbers : ");
         Scanner thisScan = new Scanner(System.in);
