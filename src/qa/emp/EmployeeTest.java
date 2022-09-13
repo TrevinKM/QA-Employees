@@ -39,9 +39,11 @@ public class EmployeeTest {
         String lastName = custName.nextLine();
 
         Employee newEmp = new Employee(firstName+lastName, firstName, lastName);
+        Employee newEmp2 = new Employee(firstName+lastName, firstName, lastName, 22000);
 
         newEmp.getName();
-
+        Integer salary = newEmp2.getSalary();
+        System.out.println(salary);
 
 
         int num1 = 5;

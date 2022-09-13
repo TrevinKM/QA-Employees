@@ -7,11 +7,19 @@ public class Employee {
     private Integer salary;
     private boolean isHired;
 
-    Employee(String userName, String firstName, String lastName){
+    public Employee(String userName, String firstName, String lastName){
         this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
+    public Employee(String userName, String firstName, String lastName, Integer salary){
+        this.userName = userName;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.salary = salary;
+    }
+
 
     /* setters for creating an employee */
     public void setSalary(Integer salary) {
@@ -24,6 +32,10 @@ public class Employee {
 
     public void getName(){
         System.out.println("Hello "+ this.firstName + " " + this.lastName);
+    }
+
+    public Integer getSalary(){
+        return (this.salary);
     }
 
     public void testCase(){
