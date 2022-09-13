@@ -1,5 +1,6 @@
 package qa.emp;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class EmployeeTest {
@@ -7,7 +8,27 @@ public class EmployeeTest {
         Employee newEmp = new Employee("jon", "smith", "js", 22);
         Integer salary = newEmp.getSalary();
     }
+    // ------------------------------------------------------------------------------------------------------
+
     public static void main(String[] args) {
+        ArrayList<Deck> cards = new ArrayList<>();
+        //Array of suits and rank
+        String[] suits = {"Spades", "Clubs", "Hearts", "Diamonds"};
+        String[] ranks = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "K", "Q", "A"};
+        //call the deck
+        for (String suit:suits) {
+            for (String rank:ranks) {
+                cards.add(new Deck(suit, rank));
+            }
+        }
+        //print the deck
+        System.out.println("~The deck~");
+        for (Deck deck: cards) {
+            System.out.println(deck.getSuit());
+        }
+
+        // ------------------------------------------------------------------------------------------------------
+
 
         //Book class calls
         Book book = new Book("50 shades ", "dunno", 22.0);
