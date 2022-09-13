@@ -1,6 +1,7 @@
 package qa.emp;
 
 public class Employee {
+
     private String userName;
     private String firstName;
     private String lastName;
@@ -35,7 +36,7 @@ public class Employee {
     }
 
     public Integer getSalary(){
-        return (this.salary);
+        return (salary);
     }
 
     public void testCase(){

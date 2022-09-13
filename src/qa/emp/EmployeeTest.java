@@ -3,6 +3,10 @@ package qa.emp;
 import java.util.Scanner;
 
 public class EmployeeTest {
+    static {
+        Employee newEmp = new Employee("jon", "smith", "js", 22);
+        Integer salary = newEmp.getSalary();
+    }
     public static void main(String[] args) {
         int myInt = 100;
 
@@ -40,10 +44,13 @@ public class EmployeeTest {
 
         Employee newEmp = new Employee(firstName+lastName, firstName, lastName);
         Employee newEmp2 = new Employee(firstName+lastName, firstName, lastName, 22000);
+        Employee newEmp3 = new Employee(firstName+lastName, firstName, lastName, 23000);
 
         newEmp.getName();
         Integer salary = newEmp2.getSalary();
-        System.out.println(salary);
+        Integer salary2 = newEmp3.getSalary();
+
+        System.out.println(salary + " " + salary2);
 
 
         int num1 = 5;
