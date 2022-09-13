@@ -1,7 +1,7 @@
 package qa.emp;
 
 public class Employee {
-
+    private static double salaryTax = 0.2;
     private String userName;
     private String firstName;
     private String lastName;
@@ -39,19 +39,23 @@ public class Employee {
         return (salary);
     }
 
-    public void testCase(){
-        //largest byte
-        byte sizeof = 127;
-        byte lowByte = -128;
-        //largest short
-        short highShort = 88;
-        int highInt = sizeof * sizeof;
-        long highLong;
-        char alpha;
-        float point;
-        double point2;
-
-        boolean nope;
+    public double getSalaryTax(){
+        return this.salary * (1 - salaryTax);
     }
+
+//    public void testCase(){
+//        //largest byte
+//        byte sizeof = 127;
+//        byte lowByte = -128;
+//        //largest short
+//        short highShort = 88;
+//        int highInt = sizeof * sizeof;
+//        long highLong;
+//        char alpha;
+//        float point;
+//        double point2;
+//
+//        boolean nope;
+//    }
 
 }

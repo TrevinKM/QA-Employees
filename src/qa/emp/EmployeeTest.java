@@ -52,17 +52,20 @@ public class EmployeeTest {
 
         System.out.println(salary + " " + salary2);
 
+        System.out.println("the taxed salaries are: " + newEmp2.getSalaryTax() + " and " + newEmp3.getSalaryTax());
 
-        int num1 = 5;
-        int num2 = 6;
 
-        float resultLast = num1/num2;
 
-        int num3 = 8;
-
-        System.out.println(num3++);
-        System.out.println(num3);
-        System.out.println(++num3);
+//        int num1 = 5;
+//        int num2 = 6;
+//
+//        float resultLast = num1/num2;
+//
+//        int num3 = 8;
+//
+//        System.out.println(num3++);
+//        System.out.println(num3);
+//        System.out.println(++num3);
 
     }
 }
