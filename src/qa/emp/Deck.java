@@ -3,7 +3,7 @@ package qa.emp;
 import java.util.HashMap;
 
 public class Deck {
-
+    public static int hello = 0;
     private String suit;
     private String rank;
 

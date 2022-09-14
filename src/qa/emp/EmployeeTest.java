@@ -8,9 +8,22 @@ public class EmployeeTest {
         Employee newEmp = new Employee("jon", "smith", "js", 22);
         Integer salary = newEmp.getSalary();
     }
+
     // ------------------------------------------------------------------------------------------------------
+    public static void meth(StringBuilder x){
+        x.append(" world 2");
+    }
+
 
     public static void main(String[] args) {
+
+        // String building
+        StringBuilder bld = new StringBuilder();
+        bld.append("Hello");
+        System.out.println(bld.toString() + " World");
+        meth(bld);
+        System.out.println(bld);
+
         ArrayList<Deck> cards = new ArrayList<>();
         //Array of suits and rank
         String[] suits = {"Spades", "Clubs", "Hearts", "Diamonds"};
