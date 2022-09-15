@@ -1,6 +1,6 @@
 package qa.emp;
 
-public class Employee {
+public class Employee extends Person{
     private static final double salaryTax = 0.2;
     private String userName;
     private String firstName;
@@ -8,13 +8,15 @@ public class Employee {
     private Integer salary;
     private boolean isHired;
 
-    public Employee(String userName, String firstName, String lastName){
+    public Employee(String userName, String firstName, String lastName, String gender){
+        super(gender);
         this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public Employee(String userName, String firstName, String lastName, Integer salary){
+    public Employee(String userName, String firstName, String lastName, Integer salary, String gender){
+        super(gender);
         this.userName = userName;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -46,6 +48,12 @@ public class Employee {
     public void raiseSalary(Integer raise){
         this.salary += raise;
     }
+
+    @Override
+    public void yearsWorked(int n) {
+        System.out.println("you have worked "+ n + " years and earned " + n*this.salary);
+    }
+
 
 //    public void testCase(){
 //        //largest byte

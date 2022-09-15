@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class EmployeeTest {
     static {
-        Employee newEmp = new Employee("jon", "smith", "js", 22);
+        Employee newEmp = new Employee("jon", "smith", "js", 22, "f");
         Integer salary = newEmp.getSalary();
     }
 
@@ -93,9 +93,9 @@ public class EmployeeTest {
         System.out.println("enter last name : ");
         String lastName = custName.nextLine();
 
-        Employee newEmp = new Employee(firstName+lastName, firstName, lastName);
-        Employee newEmp2 = new Employee(firstName+lastName, firstName, lastName, 22000);
-        Employee newEmp3 = new Employee(firstName+lastName, firstName, lastName, 23000);
+        Employee newEmp = new Employee(firstName+lastName, firstName, lastName, "meal");
+        Employee newEmp2 = new Employee(firstName+lastName, firstName, lastName, 22000, "femal");
+        Employee newEmp3 = new Employee(firstName+lastName, firstName, lastName, 23000, "fems");
 
         newEmp.getName();
         Integer salary = newEmp2.getSalary();
