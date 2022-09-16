@@ -15,5 +15,8 @@ public class Deck {
         this.suit = suit;
         this.rank = rank;
     }
+    static class collectorClass{
+        int y = 5;
+    }
 
 }

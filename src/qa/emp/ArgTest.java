@@ -1,5 +1,7 @@
 package qa.emp;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -35,6 +37,18 @@ public class ArgTest {
 
         varargs(1,2,3,4,5);
         varargs("---Hello---",1,2,3,4,5,6);
+
+        try {
+            File obj = new File("input.txt");
+            if (obj.createNewFile()){
+                System.out.println("created");
+            } else {
+                System.out.println("already exists");
+            }
+        } catch (IOException e) {
+            System.out.println("error occured");
+            e.printStackTrace();
+        }
 
     }
 }
